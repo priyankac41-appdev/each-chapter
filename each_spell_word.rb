@@ -4,4 +4,9 @@
 # Look in the github README file for example output
 
 p "Enter a word for me to spell:"
+words = gets.chomp
+word_split = words.split("")
 
+for x in 0..(word_split.length-1)
+  p word_split[x]
+end
